@@ -1,0 +1,7 @@
+numpy
+opencv-python-headless>=4.8
+pillow>=10.0
+soundfile
+onnxruntime
+sherpa-onnx>=1.12
+faster-whisper  # optional: needs huggingface.co at first run

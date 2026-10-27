@@ -1,0 +1,892 @@
+{
+  "name": "my-video",
+  "version": 1,
+  "reference": {
+    "file": "From_Klickpin.com-_657455245650083708 (before/after showcase)",
+    "container": "720x1280, 30 fps, 70.133 s, H.264 High + HE-AACv2 44.1 kHz",
+    "measured_region": "inner 'Depois' card crop=356:634:267:273, scaled x3.028 to 1080x1920",
+    "showcase_layout_not_replicated": {
+      "canvas": "#FDFDFD",
+      "depois_card": {
+        "x": 265,
+        "y": 271,
+        "w": 360,
+        "h": 638,
+        "corner_radius_px": 18,
+        "shadow": "#D6D6D6, +60 px right"
+      },
+      "antes_card": {
+        "tilt_deg_ccw": 11.3,
+        "label_pill": "#353535"
+      }
+    }
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "aspect": "9:16",
+    "fps": 30,
+    "vcodec": "libx264",
+    "crf": 18,
+    "preset": "medium",
+    "pix_fmt": "yuv420p",
+    "color": "bt709",
+    "acodec": "aac",
+    "audio_bitrate": "192k",
+    "sample_rate": 48000,
+    "safe_zone": {
+      "top_pct": 7,
+      "bottom_pct": 15,
+      "right_pct": 12,
+      "side_margin_pct": 7
+    }
+  },
+  "pacing": {
+    "reference_duration_s": 70.133,
+    "cuts_total": 20,
+    "shots_total": 21,
+    "cut_mix": {
+      "jump_cut": 13,
+      "broll_in_out": 4,
+      "zoom_blur_transition": 3
+    },
+    "shot_len_s": {
+      "mean": 3.34,
+      "median": 3.1,
+      "min": 0.3,
+      "max": 8.6
+    },
+    "by_third_mean_shot_s": [
+      2.1,
+      4.7,
+      4.7
+    ],
+    "split_long_shot_factor": 1.6,
+    "speech_rate_wps": 3.34,
+    "max_pause_s": 0.45,
+    "tolerance_pct": 30
+  },
+  "silence_removal": {
+    "cut_gaps_longer_than_s": 0.35,
+    "pad_before_word_s": 0.06,
+    "pad_after_word_s": 0.1,
+    "audio_crossfade_ms": 8,
+    "drop_immediate_repeats": true,
+    "fillers": {
+      "en": [
+        "um",
+        "uh",
+        "uhm",
+        "umm",
+        "erm",
+        "er",
+        "ah",
+        "hmm",
+        "mm",
+        "mhm"
+      ],
+      "hi": [
+        "उम्म",
+        "उम",
+        "अं",
+        "हम्म",
+        "आ",
+        "अ"
+      ],
+      "ml": [
+        "ഉം",
+        "ഉമ്മ്",
+        "അ",
+        "ആ",
+        "ഹ്മ്"
+      ],
+      "pt": [
+        "hum",
+        "ahn",
+        "éé",
+        "hã",
+        "hmm"
+      ]
+    }
+  },
+  "structure": {
+    "hook": {
+      "duration_s": 3.167,
+      "type": "question or strongest claim, first sentence",
+      "cold_open_if_better_by": 1.15,
+      "intro_blur": {
+        "frames": 6,
+        "sigma_px_start": 18
+      },
+      "intro_zoom": {
+        "from": 1.1,
+        "to": 1.0,
+        "dur_s": 0.6,
+        "ease": "out"
+      },
+      "hero_top": {
+        "y_center": 0.2,
+        "style": "serif_white"
+      },
+      "hero_bottom": {
+        "style": "caps_gold"
+      },
+      "sfx": "shimmer on gold hero"
+    },
+    "outro": {
+      "start_pct": 0.894,
+      "shots": 2,
+      "zoom": 1.0,
+      "captions": "base only",
+      "cards": false,
+      "spoken_cta": true,
+      "end_card": false
+    }
+  },
+  "transitions": {
+    "jump_cut": {
+      "type": "hard"
+    },
+    "broll": {
+      "in": "hard",
+      "out": "hard"
+    },
+    "zoom_blur": {
+      "count_per_70s": 3,
+      "positions_pct": [
+        0.35,
+        0.67,
+        0.79
+      ],
+      "out_frames": 3,
+      "out_scale_per_frame": 0.89,
+      "in_frames": 5,
+      "in_start_scale": 1.19,
+      "blur_samples": 8,
+      "whoosh": true
+    },
+    "j_l_cuts": false,
+    "whip": false,
+    "glitch": false
+  },
+  "motion": {
+    "zoom_anchor": [
+      0.536,
+      0.544
+    ],
+    "base_zoom": 1.0,
+    "punch_levels": [
+      1.09,
+      1.05,
+      1.12,
+      1.03
+    ],
+    "punch_block_shots": [
+      1,
+      2
+    ],
+    "punch_share_of_cuts": 0.45,
+    "animated_window_pct": 0.23,
+    "animated_templates": [
+      {
+        "name": "push_fast",
+        "from": 1.0,
+        "to": 1.075,
+        "dur_s": 0.37,
+        "at": "first_hero"
+      },
+      {
+        "name": "push_small",
+        "from": 1.0,
+        "to": 1.04,
+        "dur_s": 0.23,
+        "at": "first_hero"
+      },
+      {
+        "name": "ease_back",
+        "from": 1.075,
+        "to": 1.0,
+        "dur_s": 0.33,
+        "at": "shot_start"
+      },
+      {
+        "name": "slow_push",
+        "from": 1.0,
+        "to": 1.08,
+        "dur_s": 1.7,
+        "at": "shot_end_minus"
+      },
+      {
+        "name": "pull_back",
+        "from": 1.085,
+        "to": 1.0,
+        "dur_s": 0.53,
+        "at": "shot_start"
+      },
+      {
+        "name": "punch_ease",
+        "from": 1.089,
+        "to": 1.0,
+        "dur_s": 2.07,
+        "at": "shot_start"
+      }
+    ],
+    "broll_kenburns": {
+      "from": 1.075,
+      "to": 1.0
+    },
+    "shake": false,
+    "speed_ramp": false,
+    "slow_motion": false
+  },
+  "captions": {
+    "mode": "word_by_word",
+    "max_words_per_group": 3,
+    "median_words_per_group": 2,
+    "break_on_punct": ".?!,;:",
+    "break_on_gap_s": 0.3,
+    "case": "sentence (as transcribed; first hook word lowercase)",
+    "keep_punctuation": true,
+    "y_center": 0.66,
+    "y_center_range": [
+      0.64,
+      0.68
+    ],
+    "y_center_broll": {
+      "mono_halo": 0.593,
+      "warm_kenburns": 0.517
+    },
+    "word_in": {
+      "frames": 4,
+      "blur_sigma_px": 6,
+      "rise_px": 40,
+      "ease": "out"
+    },
+    "group_out": {
+      "frames": 3
+    },
+    "base": {
+      "size_px": 60,
+      "cap_height_px": 44,
+      "weight": "Medium",
+      "color": "#FFFFFF",
+      "stroke": null,
+      "shadow": {
+        "color": "#000000",
+        "opacity": 0.45,
+        "blur_px": 6,
+        "dy_px": 2
+      },
+      "word_spacing_em": 0.28,
+      "measured_by": "width match of 4 caption lines (Inter Medium equivalent)"
+    },
+    "hero": {
+      "typographic_per_third": [
+        10,
+        3,
+        0
+      ],
+      "per_third_window_s": 23.4,
+      "min_spacing_s": [
+        1.5,
+        5.0,
+        999
+      ],
+      "y_center": 0.71,
+      "y_center_hook_top": 0.245,
+      "lead_overlap": 0.3,
+      "trail_shift_x": 0.1,
+      "max_lead_words": 3,
+      "max_trail_words": 3,
+      "gold_share": 0.58,
+      "styles": {
+        "serif_white": {
+          "family": "serif_italic",
+          "fill": [
+            "#FFFFFF",
+            "#FFFFFF"
+          ],
+          "glow": "#FFFFFF",
+          "glow_opacity": 0.25,
+          "glow_blur_px": 12
+        },
+        "serif_gold": {
+          "family": "serif_italic",
+          "fill": [
+            "#FFF4DC",
+            "#F4CF92",
+            "#B98A4A"
+          ],
+          "glow": "#F0B24A",
+          "glow_opacity": 0.55,
+          "glow_blur_px": 14,
+          "fill_stops": [
+            0.0,
+            0.45,
+            1.0
+          ]
+        },
+        "caps_gold": {
+          "family": "caps_heavy",
+          "fill": [
+            "#FFF4DC",
+            "#F4CF92",
+            "#B98A4A"
+          ],
+          "glow": "#F0B24A",
+          "glow_opacity": 0.55,
+          "glow_blur_px": 14,
+          "fit_width": 0.67,
+          "fill_stops": [
+            0.0,
+            0.45,
+            1.0
+          ]
+        },
+        "caps_white": {
+          "family": "caps_heavy",
+          "fill": [
+            "#FFFFFF",
+            "#FFFFFF"
+          ],
+          "glow": "#FFFFFF",
+          "glow_opacity": 0.25,
+          "glow_blur_px": 12,
+          "fit_width": 0.67
+        }
+      },
+      "pop_in": {
+        "frames": 5,
+        "blur_sigma_px": 10,
+        "scale_from": 1.06
+      },
+      "broll_penalty": 0.5,
+      "lead_baseline_cap_frac": 0.92,
+      "phrase_merge": {
+        "latin": {
+          "max_hero_len": 4,
+          "max_prev_words": 2,
+          "max_prev_len": 3
+        },
+        "indic": {
+          "max_hero_len": 2,
+          "max_prev_words": 1,
+          "max_prev_len": 1
+        },
+        "measured_example": "é que não."
+      },
+      "lead_examples": [
+        "a resposta curta",
+        "que muitas pessoas",
+        "e tem caráter",
+        "quem nunca",
+        "pode se"
+      ],
+      "size_px": {
+        "serif": 128,
+        "serif_hook_top": 163,
+        "caps_max": 170
+      },
+      "size_measured": {
+        "serif_px": [
+          123,
+          124,
+          135
+        ],
+        "serif_hook_top_px": 163,
+        "caps_px": {
+          "CONTRIBUIU": 107,
+          "BPC": 169
+        },
+        "method": "width match on content-matched frames"
+      },
+      "max_width": 0.86,
+      "pivot_top": {
+        "window_pct": 0.2,
+        "max_words": 5,
+        "marker": "1",
+        "style": "serif_gold",
+        "words": {
+          "en": [
+            "but",
+            "however",
+            "yet"
+          ],
+          "pt": [
+            "mas",
+            "porém",
+            "entretanto"
+          ],
+          "hi": [
+            "लेकिन",
+            "पर",
+            "मगर",
+            "परंतु"
+          ],
+          "ml": [
+            "പക്ഷേ",
+            "എന്നാൽ",
+            "പക്ഷെ"
+          ]
+        },
+        "measured": "7.6 s: '1 Mas existe / outra opção' at top, gold serif, after the hook"
+      },
+      "gold_measured": {
+        "p10_rgb": [
+          184,
+          145,
+          85
+        ],
+        "p50_rgb": [
+          213,
+          170,
+          121
+        ],
+        "p90_rgb": [
+          247,
+          210,
+          157
+        ],
+        "hue_cv": 17,
+        "sat_cv": 110
+      },
+      "hook_top_words": {
+        "latin": 3,
+        "indic": 4
+      }
+    },
+    "fonts": {
+      "latin": {
+        "base": [
+          "Inter-VF.ttf",
+          "Medium"
+        ],
+        "serif_italic": [
+          "PlayfairDisplay-Italic-VF.ttf",
+          "Bold Italic"
+        ],
+        "caps_heavy": [
+          "Montserrat-VF.ttf",
+          "ExtraBold"
+        ],
+        "card": [
+          "Inter-VF.ttf",
+          "Medium"
+        ],
+        "size_scale": 1.0
+      },
+      "devanagari": {
+        "base": [
+          "NotoSansDevanagari-VF.ttf",
+          "Medium"
+        ],
+        "serif_italic": [
+          "TiroDevanagariHindi-Italic.ttf",
+          null
+        ],
+        "caps_heavy": [
+          "NotoSansDevanagari-VF.ttf",
+          "Black"
+        ],
+        "card": [
+          "NotoSansDevanagari-VF.ttf",
+          "Medium"
+        ],
+        "size_scale": 1.1,
+        "faux_bold_px": 2
+      },
+      "malayalam": {
+        "base": [
+          "NotoSansMalayalam-VF.ttf",
+          "Medium"
+        ],
+        "serif_italic": [
+          "NotoSerifMalayalam-VF.ttf",
+          "Bold"
+        ],
+        "caps_heavy": [
+          "NotoSansMalayalam-VF.ttf",
+          "Black"
+        ],
+        "card": [
+          "NotoSansMalayalam-VF.ttf",
+          "Medium"
+        ],
+        "size_scale": 1.05,
+        "synthetic_italic_deg": 12
+      }
+    },
+    "max_chars_per_group": 16,
+    "max_group_span_s": 0.9
+  },
+  "graphics": {
+    "red_circle": {
+      "color": "#E0302A",
+      "width_px": 6,
+      "draw_s": 0.4,
+      "on": "first negation hero"
+    },
+    "list_marker": {
+      "font": "serif_italic",
+      "color": "#FFFFFF",
+      "size_px": 290,
+      "on": "hero preceded by a spoken number 1/one/first",
+      "measured_digit_height_px": 208,
+      "placement": "left of lead+hero block, right edge overlaps block by 0.30 of its width, baseline = hero baseline"
+    },
+    "acronym": {
+      "box_color": "#F5C518",
+      "box_stroke_px": 4,
+      "letter_color": "#F5C518",
+      "word_color": "#FFFFFF",
+      "size_px": 92,
+      "line_gap_px": 8,
+      "x_left": 0.27
+    },
+    "card": {
+      "bg": "#FFFFFF",
+      "radius_px": 22,
+      "shadow": {
+        "opacity": 0.25,
+        "blur_px": 24,
+        "dy_px": 8
+      },
+      "width": 0.67,
+      "y_top": 0.68,
+      "padding_px": 28,
+      "text_color": "#1E1E1E",
+      "muted_color": "#6B6B6B",
+      "in": {
+        "s": 0.3,
+        "motion": "slide_up_fade",
+        "distance_px": 60
+      },
+      "out": {
+        "s": 0.3,
+        "motion": "slide_down_fade",
+        "distance_px": 120
+      },
+      "tap": {
+        "ripple_color": "#FFFFFF",
+        "radius_px": 26,
+        "s": 0.35
+      }
+    },
+    "card_types": {
+      "compare": {
+        "panels": 2,
+        "symbol": "≠",
+        "symbol_color": "#F5C518",
+        "text_px": 26,
+        "measured_s": [
+          20.2,
+          21.2
+        ],
+        "max_lines": 3
+      },
+      "timeline": {
+        "dots": 4,
+        "dot_color": "#F2A33A",
+        "line_color": "#F2C27A",
+        "label_px": 21,
+        "value_px": 21,
+        "value_color": "#3BB273",
+        "measured_s": [
+          26.0,
+          31.9
+        ],
+        "height_px": 188
+      },
+      "checklist": {
+        "row_width": 0.52,
+        "row_h_px": 86,
+        "row_gap_px": 17,
+        "ok_fill": [
+          "#EEF9E9",
+          "#BFE8B0"
+        ],
+        "ok_icon": "#2E9E3E",
+        "no_fill": [
+          "#FDEBEB",
+          "#F4B9B9"
+        ],
+        "no_icon": "#E0302A",
+        "text_px": 44,
+        "row_in_s": 0.25,
+        "measured_s": [
+          48.5,
+          55.5
+        ],
+        "icon_px": 34
+      }
+    },
+    "card_positions_pct": {
+      "compare": 0.29,
+      "timeline": 0.37,
+      "checklist": 0.69
+    },
+    "cards_per_70s": 3,
+    "halo": {
+      "color": "#D9A93C",
+      "width_px": 9,
+      "glow_px": 10,
+      "on": "first B-roll (mono)",
+      "radius_face_h": 0.7,
+      "center_dy_face_h": -0.38,
+      "pick": "highest-confidence face",
+      "measured_at_s": 11.6
+    },
+    "emojis": false,
+    "arrows": false,
+    "logo": false,
+    "lower_thirds": false,
+    "progress_bar": false
+  },
+  "color": {
+    "talking_head_filter": "lut3d=file='{LUTS}/my-video.cube':interp=tetrahedral",
+    "measured_raw_to_graded": {
+      "luma_mean": [
+        68.3,
+        77.4
+      ],
+      "luma_std": [
+        38.2,
+        45.5
+      ],
+      "luma_p5": [
+        12.0,
+        12.3
+      ],
+      "luma_p95": [
+        144.1,
+        170.7
+      ],
+      "hsv_sat_mean": [
+        59.6,
+        80.8
+      ],
+      "r_minus_b": [
+        8.5,
+        16.6
+      ],
+      "linear_gain_rgb": [
+        1.264,
+        1.152,
+        1.166
+      ],
+      "linear_offset_rgb": [
+        -5.0,
+        -3.4,
+        -4.2
+      ],
+      "fit_mae_before_after": [
+        11.9,
+        5.62
+      ],
+      "fit_result_stats": {
+        "luma_mean": 76.5,
+        "luma_std": 43.3,
+        "hsv_sat_mean": 80.5,
+        "r_minus_b": 16.8
+      }
+    },
+    "broll_mono_filter": "hue=s=0.30,eq=contrast=1.05",
+    "broll_warm_filter": "lut3d=file='{LUTS}/my-video-broll-warm.cube':interp=tetrahedral",
+    "broll_measured": {
+      "mono": {
+        "hsv_sat_mean": 46.2,
+        "r_minus_b": -2.6
+      },
+      "warm": {
+        "hsv_sat_mean": 113.6,
+        "r_minus_b": 46.9
+      }
+    },
+    "talking_head_curves": "curves=r='0/0.019 0.094/0.107 0.345/0.388 0.471/0.557 0.596/0.694 0.722/0.806 0.784/0.866 1/1':g='0/0.02 0.094/0.101 0.345/0.375 0.471/0.545 0.596/0.675 0.722/0.793 1/1':b='0/0.022 0.157/0.144 0.345/0.389 0.471/0.545 0.596/0.654 0.722/0.757 1/0.967',eq=saturation=1.30",
+    "broll_warm_curves": "curves=r='0/0.019 0.094/0.107 0.345/0.388 0.471/0.557 0.596/0.694 0.722/0.806 0.784/0.866 1/1':g='0/0.02 0.094/0.101 0.345/0.375 0.471/0.545 0.596/0.675 0.722/0.793 1/1':b='0/0.022 0.157/0.144 0.345/0.389 0.471/0.545 0.596/0.654 0.722/0.757 1/0.967'",
+    "note": "talking_head_curves is the fitted grade in plain ffmpeg terms; the pipeline applies the same model baked into assets/luts/my-video.cube (curves+eq alone differs by ~2.4/255 MAE)"
+  },
+  "broll": {
+    "per_70s": 2,
+    "positions_pct": [
+      0.122,
+      0.497
+    ],
+    "lengths_s": [
+      4.2,
+      7.67
+    ],
+    "share_of_runtime": 0.169,
+    "treatments": [
+      "mono_halo",
+      "warm_kenburns"
+    ],
+    "source_order": [
+      "user_dir",
+      "pexels"
+    ],
+    "pexels": {
+      "orientation": "portrait",
+      "min_height": 1280,
+      "per_page": 15,
+      "api_env": "PEXELS_API_KEY"
+    },
+    "captions_over_broll": true,
+    "search_window_pct": 0.08,
+    "placement_rule": "within ±8% of the measured position, choose the window covering the most jump cuts (reference B-roll #2 hides a cut cluster)"
+  },
+  "audio": {
+    "measured": {
+      "integrated_lufs": -14.3,
+      "true_peak_dbtp": 0.2,
+      "lra_lu": 3.4,
+      "crest_db": 17.0,
+      "rms_dbfs": -17.0
+    },
+    "voice_chain": "highpass=f=60,acompressor=threshold=-24dB:ratio=4:attack=5:release=80:makeup=4dB",
+    "loudnorm": {
+      "I": -14.0,
+      "TP": -1.0,
+      "LRA": 4.0
+    },
+    "music": {
+      "reference_has_music": false,
+      "default": "none",
+      "level_db_below_voice": 20,
+      "duck": {
+        "threshold": 0.05,
+        "ratio": 6,
+        "attack": 20,
+        "release": 400
+      },
+      "note": "level is a user default, not measured (reference has no music)"
+    },
+    "beat_synced_cuts": false,
+    "sfx": {
+      "shimmer": {
+        "on": "gold hero appear, hook top hero, compare/timeline/checklist card enter",
+        "partials_hz": [
+          4500,
+          6430,
+          7200,
+          9130,
+          9700
+        ],
+        "dur_s": 0.55,
+        "db_below_voice": 24.6,
+        "measured_at_s": [
+          2.57,
+          7.48,
+          20.99,
+          23.94,
+          25.53,
+          46.82,
+          55.03
+        ],
+        "offset_s": 0.1
+      },
+      "whoosh": {
+        "on": "zoom_blur transition",
+        "dur_s": 0.18,
+        "db_below_voice": 24.6,
+        "lead_s": 0.15,
+        "measured_at_s": [
+          24.32,
+          46.93
+        ],
+        "confidence": "probable"
+      },
+      "tap": {
+        "on": "card item reveal",
+        "dur_s": 0.04,
+        "db_below_voice": 30.0,
+        "measured_at_s": [
+          30.4
+        ],
+        "confidence": "single event"
+      }
+    }
+  },
+  "branding": {
+    "intro": false,
+    "outro_card": false,
+    "watermark": false,
+    "logo": false
+  },
+  "languages": {
+    "supported": [
+      "en",
+      "ml",
+      "hi"
+    ],
+    "also_works": [
+      "pt",
+      "any Whisper language with Latin script"
+    ],
+    "uppercase_tiers": {
+      "en": true,
+      "pt": true,
+      "hi": false,
+      "ml": false
+    },
+    "negations": {
+      "en": [
+        "no",
+        "not",
+        "never",
+        "don't",
+        "can't",
+        "won't"
+      ],
+      "pt": [
+        "não",
+        "nunca"
+      ],
+      "hi": [
+        "नहीं",
+        "ना",
+        "मत",
+        "कभी नहीं"
+      ],
+      "ml": [
+        "ഇല്ല",
+        "അല്ല",
+        "വേണ്ട"
+      ]
+    },
+    "number_one": {
+      "en": [
+        "1",
+        "first",
+        "firstly"
+      ],
+      "pt": [
+        "1",
+        "primeiro",
+        "primeira"
+      ],
+      "hi": [
+        "1",
+        "१",
+        "पहला",
+        "पहली",
+        "पहले"
+      ],
+      "ml": [
+        "1",
+        "൧",
+        "ഒന്നാമത്",
+        "ആദ്യം",
+        "ആദ്യത്തെ"
+      ]
+    }
+  },
+  "asr": {
+    "primary": "faster-whisper",
+    "faster_whisper_model": "large-v3-turbo",
+    "fallback": "sherpa-onnx whisper text + omnilingual CTC forced alignment",
+    "fallback_whisper_model": "sherpa-onnx-whisper-small",
+    "fallback_ctc_model": "sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-int8-2025-11-12",
+    "models_dir": "~/.cache/my-video/models"
+  }
+}
